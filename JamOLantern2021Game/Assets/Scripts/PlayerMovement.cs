@@ -5,8 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D body;
-    [SerializeField] private float horizontalMovement;
-    [SerializeField] private float verticalMovement;
+    [SerializeField] private KeyCode left;
+    [SerializeField] private KeyCode right;
+    [SerializeField] private KeyCode up;
+    [SerializeField] private KeyCode down;
+    //[SerializeField] private float horizontalMovement;
+    //[SerializeField] private float verticalMovement;
+
     [SerializeField] private float sprintSpeed = 10.0f;
     [SerializeField] private float speedDampener = 0.7f;
 
@@ -19,23 +24,50 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // - 1 = left, 1 = right
-        horizontalMovement = Input.GetAxisRaw("Horizontal");
-
-        // -1 = down, 1 = up
-        verticalMovement = Input.GetAxisRaw("Vertical");
-    }
-
-    void FixedUpdate()
-    {
-        // diagonal movement
-        if (horizontalMovement != 0 && verticalMovement != 0)
+        if (Input.GetKey(left))
         {
-            horizontalMovement += speedDampener;
-            verticalMovement += speedDampener;
+            body.velocity = new Vector2(-sprintSpeed, body.velocity.y);
         }
-
-        body.velocity = new Vector2(horizontalMovement * sprintSpeed,
-            verticalMovement * sprintSpeed);
+        else if (Input.GetKey(right))
+        {
+            body.velocity = new Vector2(sprintSpeed, body.velocity.y);
+        }
+        else if (Input.GetKey(up))
+        {
+            body.velocity = new Vector2(body.velocity.x, sprintSpeed);
+        }
+        else if (Input.GetKey(down))
+        {
+            body.velocity = new Vector2(body.velocity.x, -sprintSpeed);
+        }
+        else if (Input.GetKey(left) && Input.GetKey(up))
+        {
+            body.velocity = new Vector2(body.velocity.x * -sprintSpeed
+                + speedDampener, body.velocity.y * sprintSpeed + speedDampener);
+        }
+        else if (Input.GetKey(left) && Input.GetKey(down))
+        {
+            body.velocity = new Vector2(-sprintSpeed + speedDampener,
+                -sprintSpeed + speedDampener);
+        }
+        else if (Input.GetKey(right) && Input.GetKey(up))
+        {
+            body.velocity = new Vector2(sprintSpeed + speedDampener,
+                sprintSpeed + speedDampener);
+        }
+        else if (Input.GetKey(right) && Input.GetKey(down))
+        {
+            body.velocity = new Vector2(sprintSpeed + speedDampener,
+                -sprintSpeed + speedDampener);
+        } 
+        else if (Input.GetKey(right) && Input.GetKey(down))
+        {
+            body.velocity = new Vector2(sprintSpeed + speedDampener,
+                -sprintSpeed + speedDampener);
+        }
+        else
+        {
+            body.velocity = new Vector2(0, 0);
+        }
     }
 }
