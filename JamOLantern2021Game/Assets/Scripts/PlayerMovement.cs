@@ -24,7 +24,27 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(left))
+        if (Input.GetKey(left) && Input.GetKey(up))
+        {
+            body.velocity = new Vector2(-sprintSpeed
+                + speedDampener, sprintSpeed + speedDampener);
+        }
+        else if (Input.GetKey(left) && Input.GetKey(down))
+        {
+            body.velocity = new Vector2(-sprintSpeed
+                + speedDampener, -sprintSpeed + speedDampener);
+        }
+        else if (Input.GetKey(right) && Input.GetKey(up))
+        {
+            body.velocity = new Vector2(sprintSpeed
+                + speedDampener, sprintSpeed + speedDampener);
+        }
+        else if (Input.GetKey(right) && Input.GetKey(down))
+        {
+            body.velocity = new Vector2(sprintSpeed
+                + speedDampener, -sprintSpeed + speedDampener);
+        }
+        else if (Input.GetKey(left))
         {
             body.velocity = new Vector2(-sprintSpeed, body.velocity.y);
         }
@@ -39,31 +59,6 @@ public class PlayerMovement : MonoBehaviour
         else if (Input.GetKey(down))
         {
             body.velocity = new Vector2(body.velocity.x, -sprintSpeed);
-        }
-        else if (Input.GetKey(left) && Input.GetKey(up))
-        {
-            body.velocity = new Vector2(body.velocity.x * -sprintSpeed
-                + speedDampener, body.velocity.y * sprintSpeed + speedDampener);
-        }
-        else if (Input.GetKey(left) && Input.GetKey(down))
-        {
-            body.velocity = new Vector2(-sprintSpeed + speedDampener,
-                -sprintSpeed + speedDampener);
-        }
-        else if (Input.GetKey(right) && Input.GetKey(up))
-        {
-            body.velocity = new Vector2(sprintSpeed + speedDampener,
-                sprintSpeed + speedDampener);
-        }
-        else if (Input.GetKey(right) && Input.GetKey(down))
-        {
-            body.velocity = new Vector2(sprintSpeed + speedDampener,
-                -sprintSpeed + speedDampener);
-        } 
-        else if (Input.GetKey(right) && Input.GetKey(down))
-        {
-            body.velocity = new Vector2(sprintSpeed + speedDampener,
-                -sprintSpeed + speedDampener);
         }
         else
         {
