@@ -5,15 +5,16 @@ using UnityEngine;
 // Holds the cards the player has in their deck
 public class PlayerCards : MonoBehaviour {
 
-	// list of Card's in inventory, should all be prefabs
-	[SerializeField] private Card [] cards;
-	// Start is called before the first frame update
-	void Start () {
+	[SerializeField] private List<Card> cards; // list of Card's in inventory, should all be prefabs
+	[SerializeField] private KeyCode keyToAttack;
+	[SerializeField] private PlayerMovement playerMovement; // Player movement of this player
+	private int currentCard; // the current card in the players hand
 
-	}
-
-	// Update is called once per frame
-	void Update () {
-
+	// called every frame
+	private void Update () {
+		if (Input.GetKeyDown (this.keyToAttack)) {
+			this.cards [this.currentCard].Activate ((int)this.playerMovement.playerFacing.x,
+				(int)this.playerMovement.playerFacing.y, this.transform.position);
+		}
 	}
 }

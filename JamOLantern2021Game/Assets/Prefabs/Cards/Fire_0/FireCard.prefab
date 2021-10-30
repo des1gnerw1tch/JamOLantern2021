@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5722016416286522023}
   - component: {fileID: 6098631423860087683}
   m_Layer: 0
-  m_Name: ExampleCard1
+  m_Name: FireCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,5 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179809185029a4ee1aeada542572f468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
+  level: 0
   CanvasPrefab: {fileID: 7188733606222581030, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
+  projectile: {fileID: 8572364861698203245, guid: 693cb31fd06424f4692bdcc87c2966f0, type: 3}
+  projVelocity: 1000

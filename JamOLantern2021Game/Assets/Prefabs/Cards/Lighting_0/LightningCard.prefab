@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9006167000781420765}
-  - component: {fileID: 9006167000781420766}
+  - component: {fileID: 2292768895657508559}
   m_Layer: 0
-  m_Name: ExampleCard2
+  m_Name: LightningCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9006167000781420766
+--- !u!114 &2292768895657508559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9006167000781420767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6dfacf9286104dcebef35499c8bf807, type: 3}
+  m_Script: {fileID: 11500000, guid: 440dd71c69efa4f4eafb59e544b44353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
