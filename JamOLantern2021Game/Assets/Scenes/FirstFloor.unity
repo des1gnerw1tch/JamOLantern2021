@@ -205,6 +205,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &271505580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7188733606222581028, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
+  m_PrefabInstance: {fileID: 1885127991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &688608559
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188733606222581029, guid: a7ba8cbd7f93a42fc96f5cb42014711c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7188733606222581029, guid: a7ba8cbd7f93a42fc96f5cb42014711c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -497,6 +508,10 @@ PrefabInstance:
     - target: {fileID: 7188733606222581030, guid: a7ba8cbd7f93a42fc96f5cb42014711c, type: 3}
       propertyPath: m_Name
       value: ExampleCard2Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188733606222581030, guid: a7ba8cbd7f93a42fc96f5cb42014711c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7ba8cbd7f93a42fc96f5cb42014711c, type: 3}
@@ -597,8 +612,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 756041194}
-  - {fileID: 779855539}
   - {fileID: 1885127992}
+  - {fileID: 779855539}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -857,10 +872,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cards:
-  - {fileID: -7025184563063199012, guid: bcc9dd22f44c44762996fed966fca95f, type: 3}
+  - {fileID: 6098631423860087683, guid: 77fb88eed39c44f16b954ddc0052eea2, type: 3}
   - {fileID: -7025184563063199012, guid: bcc9dd22f44c44762996fed966fca95f, type: 3}
   keyToAttack: 303
   playerMovement: {fileID: 1052894143}
+  currentActiveCardImage: {fileID: 271505580}
 --- !u!114 &1052894145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,6 +1129,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 858769944}
     m_Modifications:
+    - target: {fileID: 7188733606222581028, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188733606222581028, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2922113337684369405, guid: ea88ffc6a20b6417e9311059926721ce, type: 3}
     - target: {fileID: 7188733606222581029, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1123,7 +1147,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188733606222581029, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7188733606222581029, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1199,7 +1223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188733606222581030, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
       propertyPath: m_Name
-      value: ExampleCard1Canvas
+      value: ActiveCardCanvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}

@@ -45,6 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   CanvasPrefab: {fileID: 7188733606222581030, guid: a7ba8cbd7f93a42fc96f5cb42014711c, type: 3}
+  sprite: {fileID: -2922113337684369405, guid: ea88ffc6a20b6417e9311059926721ce, type: 3}
   projectile: {fileID: 3529272456437715416, guid: 6d9faefdf6a9c4ebfa1bdd7760be3fd6, type: 3}
-  projVelocity: 1500
+  projVelocity: 500
   damage: 0.7
+  cardSprite: {fileID: -2922113337684369405, guid: ea88ffc6a20b6417e9311059926721ce, type: 3}
