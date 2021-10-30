@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 // Holds the cards the player has in their deck
 public class PlayerCards : MonoBehaviour {
@@ -11,6 +12,9 @@ public class PlayerCards : MonoBehaviour {
 	[SerializeField] private KeyCode keyToAttack;
 	[SerializeField] private PlayerMovement playerMovement; // Player movement of this player
 	[SerializeField] private Image currentActiveCardImage; // the active UI card seen on the canvas for this player
+	[SerializeField] private TextMeshProUGUI currentNumText; //UI Element
+	[SerializeField] private TextMeshProUGUI deckSizeText; //UI Element
+
 	private int currentCardIndex; // the current card in the players hand
 
 	private void Start () {
@@ -21,6 +25,8 @@ public class PlayerCards : MonoBehaviour {
 	// updates the current card image UI
 	private void UpdateCurrentCardImage () {
 		this.currentActiveCardImage.sprite = this.cards [this.currentCardIndex].sprite;
+		this.currentNumText.text = this.currentCardIndex + 1 + "";
+		this.deckSizeText.text = "/ " + this.cards.Count;
 	}
 
 	// called every frame
