@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// FireCard is a general Card
-public class FireCard : Card {
+// General Projectile Card
+public class ProjectileCard : Card {
 	[SerializeField] private GameObject projectile; // projectile this card shoots
 	[SerializeField] private float projVelocity; // projectile velocity
+	[SerializeField] private float damage; // damage done to enemies
 
 	// Shoots this projectile
 	// xDirection: The direction the player is facing on the x axis

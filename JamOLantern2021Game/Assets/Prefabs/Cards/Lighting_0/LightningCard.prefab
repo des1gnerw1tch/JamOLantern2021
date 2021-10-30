@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9006167000781420765}
-  - component: {fileID: 2292768895657508559}
+  - component: {fileID: -7025184563063199012}
   m_Layer: 0
   m_Name: LightningCard
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2292768895657508559
+--- !u!114 &-7025184563063199012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +40,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9006167000781420767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 440dd71c69efa4f4eafb59e544b44353, type: 3}
+  m_Script: {fileID: 11500000, guid: 179809185029a4ee1aeada542572f468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
   CanvasPrefab: {fileID: 7188733606222581030, guid: a7ba8cbd7f93a42fc96f5cb42014711c, type: 3}
+  projectile: {fileID: 3529272456437715416, guid: 6d9faefdf6a9c4ebfa1bdd7760be3fd6, type: 3}
+  projVelocity: 1500
+  damage: 0.7

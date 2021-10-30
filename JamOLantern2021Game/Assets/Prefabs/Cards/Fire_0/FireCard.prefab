@@ -47,3 +47,4 @@ MonoBehaviour:
   CanvasPrefab: {fileID: 7188733606222581030, guid: d833d2d7bef8240e995debc89c5cc5e4, type: 3}
   projectile: {fileID: 8572364861698203245, guid: 693cb31fd06424f4692bdcc87c2966f0, type: 3}
   projVelocity: 1000
+  damage: 1
