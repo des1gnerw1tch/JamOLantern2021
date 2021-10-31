@@ -32,6 +32,15 @@ TextureImporter:
   - first:
       213: -7172617429623840284
     second: gun girl Sheet_9
+  - first:
+      213: -3420169300267141799
+    second: gun girl Sheet_10
+  - first:
+      213: -1975654023086851214
+    second: gun girl Sheet_11
+  - first:
+      213: -9192698905174194945
+    second: gun girl Sheet_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -350,6 +359,69 @@ TextureImporter:
       bones: []
       spriteID: 4e1ee7d237eb57c90800000000000000
       internalID: -7172617429623840284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun girl Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95571e9642e1980d0800000000000000
+      internalID: -3420169300267141799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun girl Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b36da22211594e0800000000000000
+      internalID: -1975654023086851214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gun girl Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff448fdfc09fc6080800000000000000
+      internalID: -9192698905174194945
       vertices: []
       indices: 
       edges: []
