@@ -294,7 +294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858bbeb4da09a471a96078c62af2c5b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1044735816}
   moveSpeed: 4
   range: 2
 --- !u!50 &47745534
@@ -1206,11 +1205,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!4 &1044735816 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2037612230362215876, guid: 91d610d2517c44a5280f21c15e6031f7, type: 3}
-  m_PrefabInstance: {fileID: 1998613836}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1047596925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1773,6 +1767,14 @@ PrefabInstance:
       propertyPath: right
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2037612230362215878, guid: 91d610d2517c44a5280f21c15e6031f7, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1044735811}
+    - target: {fileID: 2037612230362215878, guid: 91d610d2517c44a5280f21c15e6031f7, type: 3}
+      propertyPath: sprintSpeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91d610d2517c44a5280f21c15e6031f7, type: 3}
 --- !u!1001 &2037612230458660473
@@ -1869,6 +1871,10 @@ PrefabInstance:
     - target: {fileID: 2037612230362215877, guid: 91d610d2517c44a5280f21c15e6031f7, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037612230362215878, guid: 91d610d2517c44a5280f21c15e6031f7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91d610d2517c44a5280f21c15e6031f7, type: 3}
