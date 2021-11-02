@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 	[SerializeField] private Rigidbody2D body;
-	[SerializeField] private KeyCode left;
-	[SerializeField] private KeyCode right;
-	[SerializeField] private KeyCode up;
-	[SerializeField] private KeyCode down;
+	[HideInInspector] public KeyCode left;
+	[HideInInspector] public KeyCode right;
+	[HideInInspector] public KeyCode up;
+	[HideInInspector] public KeyCode down;
 	[SerializeField] private Animator animator; // animator for this character
 
 	//[SerializeField] private float horizontalMovement;

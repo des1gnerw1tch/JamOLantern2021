@@ -6,16 +6,17 @@ using UnityEngine.UI;
 using TMPro;
 
 // Holds the cards the player has in their deck
+// Many fields are set on start inside FirstFloorManager class
 public class PlayerCards : MonoBehaviour {
 
 	[SerializeField] private List<Card> cards; // list of Card's in inventory, should all be prefabs
-	[SerializeField] private KeyCode keyToUse; // Key pressed to use card
-	[SerializeField] private KeyCode keyToSkip; // Key pressed to skip card
+	[HideInInspector] public KeyCode keyToUse; // Key pressed to use card
+	[HideInInspector] public KeyCode keyToSkip; // Key pressed to skip card
 
 	[SerializeField] private PlayerMovement playerMovement; // Player movement of this player
-	[SerializeField] private Image currentActiveCardImage; // the active UI card seen on the canvas for this player
-	[SerializeField] private TextMeshProUGUI currentNumText; //UI Element
-	[SerializeField] private TextMeshProUGUI deckSizeText; //UI Element
+	[HideInInspector] public Image currentActiveCardImage; // the active UI card seen on the canvas for this player
+	[HideInInspector] public TextMeshProUGUI currentNumText; //UI Element
+	[HideInInspector] public TextMeshProUGUI deckSizeText; //UI Element
 
 	private int currentCardIndex; // the current card in the players hand
 
