@@ -6,7 +6,7 @@ using System;
 public class PlayerHealth : MonoBehaviour {
 	[SerializeField] private int health;
 
-	void ResetHealth () {
+	void SartHealth () {
 		this.health = 100;
 	}
 
@@ -17,14 +17,14 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	// Adds Health by points, no overheal
-	void Health (int healthPoints) {
-		if (health < 100) {
+	public void Heal (int healthPoints) {
+		if (this.health < 100) {
 			this.health = Math.Min(100, this.health + healthPoints);
 		}
 	}
 
 	// Adds Health by points, with overheal to 120
-	void HealthOverheal (int healthPoints) {
+	public void HealOver (int healthPoints) {
 		this.health = Math.Min(120, this.health + healthPoints);
 	}
 }

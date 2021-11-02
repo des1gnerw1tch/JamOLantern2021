@@ -5,20 +5,19 @@ using UnityEngine.UI;
 
 // General Projectile Card
 public class HealingCard : Card {
-	[SerializeField] private float health; // health done to enemies
+	[SerializeField] private int health; // health done to enemies
 	[SerializeField] public Sprite cardSprite;
+    [SerializeField] public bool overheal; //if has overheal
 
 	// Heals 
-	public override void Activate () {
+	public override void Activate (int xDirection, int yDirection, Vector3 playerPos) {
 		foreach (PlayerHealth curPlay in FindObjectsOfType<PlayerHealth>()) {
-            curPlay.Heal(health);
-        }
-	}
-
-    // Heals with overheal
-	public override void ActivateOverheal () {
-		foreach (PlayerHealth curPlay in FindObjectsOfType<PlayerHealth>()) {
-            curPlay.HealOver(health)
+            if (this.overheal) {
+                curPlay.HealOver(this.health);
+            }
+            else {
+                curPlay.Heal(this.health);
+            }
         }
 	}
 }
