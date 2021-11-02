@@ -1599,17 +1599,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6282858287500375961, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
   m_PrefabInstance: {fileID: 5437603781926678295}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2037612231685527698 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6282858287500375965, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
-  m_PrefabInstance: {fileID: 5437603781926678295}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037612231685527694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e361e3321f5744e1917c55cca6bd66e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2705542781390954066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8697729847199552737, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
@@ -1622,18 +1611,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2705542781357959733, guid: 7fde122b71ad44350960e6e01159fba1, type: 3}
-      propertyPath: cards.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2705542781357959733, guid: 7fde122b71ad44350960e6e01159fba1, type: 3}
-      propertyPath: cards.Array.data[0]
-      value: 
-      objectReference: {fileID: 6098631423860087683, guid: 77fb88eed39c44f16b954ddc0052eea2, type: 3}
-    - target: {fileID: 2705542781357959733, guid: 7fde122b71ad44350960e6e01159fba1, type: 3}
-      propertyPath: cards.Array.data[1]
-      value: 
-      objectReference: {fileID: -7025184563063199012, guid: bcc9dd22f44c44762996fed966fca95f, type: 3}
     - target: {fileID: 2705542781833507032, guid: 7fde122b71ad44350960e6e01159fba1, type: 3}
       propertyPath: m_Name
       value: Priest
@@ -1691,26 +1668,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5437603781024548947, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
-      propertyPath: playerMovement
-      value: 
-      objectReference: {fileID: 2037612231685527698}
-    - target: {fileID: 5437603781024548947, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
-      propertyPath: cards.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5437603781024548947, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
-      propertyPath: cards.Array.data[0]
-      value: 
-      objectReference: {fileID: 6098631423860087683, guid: 77fb88eed39c44f16b954ddc0052eea2, type: 3}
-    - target: {fileID: 5437603781024548947, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
-      propertyPath: cards.Array.data[1]
-      value: 
-      objectReference: {fileID: -7025184563063199012, guid: bcc9dd22f44c44762996fed966fca95f, type: 3}
-    - target: {fileID: 5437603781024548947, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
-      propertyPath: cards.Array.data[2]
-      value: 
-      objectReference: {fileID: 6098631423860087683, guid: 77fb88eed39c44f16b954ddc0052eea2, type: 3}
     - target: {fileID: 6282858287500375961, guid: d0d454f8b663444289355327c1d3e6c5, type: 3}
       propertyPath: m_Name
       value: GunGirl
@@ -1768,18 +1725,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3047895046391332480, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
-      propertyPath: cards.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3047895046391332480, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
-      propertyPath: cards.Array.data[0]
-      value: 
-      objectReference: {fileID: 6098631423860087683, guid: 77fb88eed39c44f16b954ddc0052eea2, type: 3}
-    - target: {fileID: 3047895046391332480, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
-      propertyPath: cards.Array.data[1]
-      value: 
-      objectReference: {fileID: -7025184563063199012, guid: bcc9dd22f44c44762996fed966fca95f, type: 3}
     - target: {fileID: 8697729847199552737, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
       propertyPath: m_Name
       value: Carpenter
@@ -1828,20 +1773,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8697729847660383756, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
-      propertyPath: cards.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8697729847660383756, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
-      propertyPath: cards.Array.data[0]
-      value: 
-      objectReference: {fileID: 6098631423860087683, guid: 77fb88eed39c44f16b954ddc0052eea2, type: 3}
-    - target: {fileID: 8697729847660383756, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
-      propertyPath: cards.Array.data[1]
-      value: 
-      objectReference: {fileID: -7025184563063199012, guid: bcc9dd22f44c44762996fed966fca95f, type: 3}
-    m_RemovedComponents:
-    - {fileID: 8697729847660383756, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c8a7d0d768249caa68b2825e7fe5b1, type: 3}
 --- !u!1001 &8869994629649775908
 PrefabInstance:

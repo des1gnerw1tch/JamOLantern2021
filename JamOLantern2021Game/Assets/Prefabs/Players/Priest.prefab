@@ -173,7 +173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b61e2c99cdd46fcbcd6b39570e920f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cards: []
+  cards:
+  - {fileID: 6098631423860087683, guid: 77fb88eed39c44f16b954ddc0052eea2, type: 3}
+  - {fileID: -7025184563063199012, guid: bcc9dd22f44c44762996fed966fca95f, type: 3}
   keyToUse: 0
   keyToSkip: 0
   playerMovement: {fileID: 2705542781833507036}
