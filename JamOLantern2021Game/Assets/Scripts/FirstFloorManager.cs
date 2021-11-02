@@ -40,7 +40,7 @@ public class FirstFloorManager : MonoBehaviour {
 	// x: GunGirlActivated?
 	// y: PriestActivated?
 	// z: CarpenterActivated?
-	[SerializeField] private static Vector3 playersToActivate; // The players to activate
+	public static Vector3 playersToActivate; // The players to activate
 
 	// called before first frame update
 	private void Awake () {
@@ -49,7 +49,6 @@ public class FirstFloorManager : MonoBehaviour {
 			player.SetActive (false);
 		}
 
-		playersToActivate = new Vector3 (2, 1, 0);
 		// Set up Players in the scene with correct input
 		this.InitiatePlayer (this.players [0], playersToActivate.x);
 		this.InitiatePlayer (this.players [1], playersToActivate.y);
