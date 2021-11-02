@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerHealth : MonoBehaviour {
 	[SerializeField] private int health;
@@ -10,7 +11,7 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	// Returns true if still alive, false if not
-	boolean Damage (int healthPoints) {
+	bool Damage (int healthPoints) {
 		this.health -= healthPoints;
 		return health <= 0;
 	}
