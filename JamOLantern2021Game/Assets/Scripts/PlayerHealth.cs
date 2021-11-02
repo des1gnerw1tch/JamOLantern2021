@@ -6,7 +6,7 @@ using System;
 public class PlayerHealth : MonoBehaviour {
 	[SerializeField] private int health;
 
-	void SartHealth () {
+	void ResetHealth () {
 		this.health = 100;
 	}
 
