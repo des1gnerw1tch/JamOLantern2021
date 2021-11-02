@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class ProjectileCard : Card {
 	[SerializeField] private GameObject projectile; // projectile this card shoots
 	[SerializeField] private float projVelocity; // projectile velocity
-	[SerializeField] private float damage; // damage done to enemies
 	[SerializeField] public Sprite cardSprite;
 
 	// Shoots this projectile
