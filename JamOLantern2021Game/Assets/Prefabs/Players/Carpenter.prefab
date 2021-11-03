@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  sprite: {fileID: 8697729847199552742}
 --- !u!95 &8697729847660383759
 Animator:
   serializedVersion: 3

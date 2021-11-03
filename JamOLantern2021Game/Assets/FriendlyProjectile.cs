@@ -9,7 +9,11 @@ public class FriendlyProjectile : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Enemy")) {
 			if (other.gameObject.GetComponent<EnemyHealth> ().Damage (this.damage)) {
 				Destroy (other.gameObject);
+				FindObjectOfType<AudioManager> ().Play ("enemyDeath");
+			} else {
+				FindObjectOfType<AudioManager> ().Play ("damageToEnemy");
 			}
+
 			Destroy (this.gameObject);
 
 		}
