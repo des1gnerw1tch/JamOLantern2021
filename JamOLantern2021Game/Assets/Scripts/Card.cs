@@ -5,7 +5,6 @@ using UnityEngine;
 // Attributes of a Card, will probably become abstract
 public abstract class Card : MonoBehaviour {
 	[SerializeField] private int level; // level of this card
-	[SerializeField] private GameObject CanvasPrefab; //
 	public Sprite sprite;
 	public bool dispenseWhenUsed;
 
