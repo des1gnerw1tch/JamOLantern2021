@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FriendlyProjectile : MonoBehaviour {
 	[SerializeField] private int damage;
+	[SerializeField] private bool pierce;
 
 	private void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.CompareTag ("Enemy")) {
@@ -14,7 +15,8 @@ public class FriendlyProjectile : MonoBehaviour {
 				FindObjectOfType<AudioManager> ().Play ("damageToEnemy");
 			}
 
-			Destroy (this.gameObject);
+			if (!pierce)
+				Destroy (this.gameObject);
 
 		}
 	}

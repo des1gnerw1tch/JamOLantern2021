@@ -16,7 +16,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	IEnumerator Blink () {
 		this.sprite.enabled = false;
-		yield return new WaitForSeconds (.1f);
+		yield return new WaitForSeconds (.05f);
 		this.sprite.enabled = true;
 	}
 
