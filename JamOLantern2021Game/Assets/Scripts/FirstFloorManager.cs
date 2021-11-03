@@ -49,10 +49,18 @@ public class FirstFloorManager : MonoBehaviour {
 			player.SetActive (false);
 		}
 
-		// Set up Players in the scene with correct input
-		this.InitiatePlayer (this.players [0], playersToActivate.x);
-		this.InitiatePlayer (this.players [1], playersToActivate.y);
-		this.InitiatePlayer (this.players [2], playersToActivate.z);
+		// Check if Single Player
+		if (playersToActivate.x + playersToActivate.y + playersToActivate.z == 2) {
+			this.InitiatePlayer (this.players [0], playersToActivate.x / 2);
+			this.InitiatePlayer (this.players [1], playersToActivate.y / 2);
+			this.InitiatePlayer (this.players [2], playersToActivate.z / 2);
+		} else { // If two player
+				 // Set up Players in the scene with correct input, 2 player
+			this.InitiatePlayer (this.players [0], playersToActivate.x);
+			this.InitiatePlayer (this.players [1], playersToActivate.y);
+			this.InitiatePlayer (this.players [2], playersToActivate.z);
+		}
+
 	}
 
 	// Initiates a player to correct input system and activates/deactivates object if needed

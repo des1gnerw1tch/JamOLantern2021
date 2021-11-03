@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3529272456437715417}
   - component: {fileID: 250596497397454754}
   - component: {fileID: -8094277474708874784}
+  - component: {fileID: -3323027781394384614}
   m_Layer: 0
   m_Name: EBolt
   m_TagString: Untagged
@@ -135,7 +136,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0280056, y: -0.032206416}
@@ -151,3 +152,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25147343, y: 0.8450687}
   m_EdgeRadius: 0
+--- !u!114 &-3323027781394384614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3529272456437715416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a69b2d901827482caceddb090cc599e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50

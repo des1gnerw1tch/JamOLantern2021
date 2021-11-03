@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour {
 
 
 	// Returns true if still alive, false if not
-	bool Damage (int healthPoints) {
+	public bool Damage (int healthPoints) {
 		this.health -= healthPoints;
 		return health <= 0;
 	}

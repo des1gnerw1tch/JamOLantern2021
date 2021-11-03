@@ -35,7 +35,6 @@ public class ProjectileCard : Card {
 			if (yDirection < 0) {
 				rotateZ = 180;
 			}
-			Debug.Log (rotateZ);
 			return new Vector3 (0, 0, rotateZ);
 		}
 	}

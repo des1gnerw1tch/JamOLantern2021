@@ -59,8 +59,11 @@ public class Enemy : MonoBehaviour {
 	// if bumped into something
 	private void OnCollisionEnter2D (Collision2D other) {
 		if (other.gameObject.CompareTag ("Player")) { // if is a player
-			other.gameObject.GetComponent<PlayerHealth> ().Damage (this.damageOnCollide);
 			FindObjectOfType<AudioManager> ().Play ("damage");
+			if (other.gameObject.GetComponent<PlayerHealth> ().Damage (this.damageOnCollide)) {
+				Debug.Log ("Player died game freezed");
+				Time.timeScale = 0f;
+			}
 		}
 	}
 }
