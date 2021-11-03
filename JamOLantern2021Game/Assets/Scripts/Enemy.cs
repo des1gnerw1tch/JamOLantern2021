@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour {
 	private Rigidbody2D body;
 	private Vector2 movement;
 	GameObject [] possibleTargets;
+	[SerializeField] private int damageOnCollide; // how much damage this enemy will do to player on collide
 
 
 	// Start is called before the first frame update
@@ -44,8 +45,6 @@ public class Enemy : MonoBehaviour {
 			this.animator.SetInteger ("xVelocity", 0);
 			this.animator.SetInteger ("yVelocity", floatToInt (direction.y));
 		}
-		Debug.Log (direction.x);
-		//Debug.Log (direction.y);
 
 		int floatToInt (float number) {
 			if (number < 0) {
@@ -54,6 +53,14 @@ public class Enemy : MonoBehaviour {
 				return 1;
 			}
 
+		}
+	}
+
+	// if bumped into something
+	private void OnCollisionEnter2D (Collision2D other) {
+		if (other.gameObject.CompareTag ("Player")) { // if is a player
+			other.gameObject.GetComponent<PlayerHealth> ().Damage (this.damageOnCollide);
+			FindObjectOfType<AudioManager> ().Play ("damage");
 		}
 	}
 }

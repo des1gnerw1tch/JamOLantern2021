@@ -1654,7 +1654,13 @@ MonoBehaviour:
   sounds:
   - name: letsDoThis
     clip: {fileID: 8300000, guid: f73ad7212af094ef987713e7eab99251, type: 3}
-    volume: 1
+    volume: 0.566
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: damage
+    clip: {fileID: 8300000, guid: 6e9b37e6327144929a8a84b91ad2bbf7, type: 3}
+    volume: 0.658
     pitch: 1
     loop: 0
     source: {fileID: 0}

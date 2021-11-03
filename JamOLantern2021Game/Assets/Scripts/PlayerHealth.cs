@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	// Returns true if still alive, false if not
-	bool Damage (int healthPoints) {
+	public bool Damage (int healthPoints) {
 		this.health -= healthPoints;
 		return health <= 0;
 	}
@@ -19,12 +19,12 @@ public class PlayerHealth : MonoBehaviour {
 	// Adds Health by points, no overheal
 	public void Heal (int healthPoints) {
 		if (this.health < 100) {
-			this.health = Math.Min(100, this.health + healthPoints);
+			this.health = Math.Min (100, this.health + healthPoints);
 		}
 	}
 
 	// Adds Health by points, with overheal to 120
 	public void HealOver (int healthPoints) {
-		this.health = Math.Min(120, this.health + healthPoints);
+		this.health = Math.Min (120, this.health + healthPoints);
 	}
 }
