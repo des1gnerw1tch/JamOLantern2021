@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 8869994629605176543}
   - component: {fileID: 8869994629605176538}
   - component: {fileID: 8869994629605176537}
+  - component: {fileID: 5735710691318068936}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Demon Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
+  m_Sprite: {fileID: -5090170253316478842, guid: 37a05f5e942704dc1a99b5cf4fd3349d, type: 3}
   m_Color: {r: 1, g: 0.38724637, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,5 +118,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858bbeb4da09a471a96078c62af2c5b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 5735710691318068936}
   moveSpeed: 4
   range: 2
+--- !u!95 &5735710691318068936
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8869994629605176542}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 65c79eae272eb438cbbd9a3734351a28, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
