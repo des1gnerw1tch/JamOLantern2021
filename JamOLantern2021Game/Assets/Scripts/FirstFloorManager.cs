@@ -67,6 +67,7 @@ public class FirstFloorManager : MonoBehaviour {
 	private void InitiatePlayer (GameObject playerObject, float id) {
 		PlayerMovement movement = playerObject.GetComponent<PlayerMovement> ();
 		PlayerCards cards = playerObject.GetComponent<PlayerCards> ();
+		PlayerHealth health = playerObject.GetComponent<PlayerHealth> ();
 		switch (id) {
 			case 0:
 				playerObject.SetActive (false);
