@@ -19,6 +19,7 @@ public class FirstFloorManager : MonoBehaviour {
 	[SerializeField] private Image currentActiveCardImage; // the active UI card seen on the canvas for this player
 	[SerializeField] private TextMeshProUGUI currentNumText; //UI Element
 	[SerializeField] private TextMeshProUGUI deckSizeText; //UI Element
+	[SerializeField] private Slider healthSlider;
 
 	[Header ("Player 2 Controls/UI")]
 	[SerializeField] private KeyCode move_left2;
@@ -33,7 +34,9 @@ public class FirstFloorManager : MonoBehaviour {
 	[SerializeField] private Image currentActiveCardImage2; // the active UI card seen on the canvas for this player
 	[SerializeField] private TextMeshProUGUI currentNumText2; //UI Element
 	[SerializeField] private TextMeshProUGUI deckSizeText2; //UI Element
+	[SerializeField] private Slider healthSlider2;
 
+	[Header ("Static Variables")]
 	[SerializeField] private GameObject [] players; // Players from scene
 
 	// Vector field set to 1 if Player 1, and set to 2 if Player 2, and set to 0 if not Playing
@@ -82,6 +85,7 @@ public class FirstFloorManager : MonoBehaviour {
 				cards.currentActiveCardImage = this.currentActiveCardImage;
 				cards.currentNumText = this.currentNumText;
 				cards.deckSizeText = this.deckSizeText;
+				health.healthSlider = this.healthSlider;
 				playerObject.SetActive (true);
 				break;
 			case 2:
@@ -94,6 +98,7 @@ public class FirstFloorManager : MonoBehaviour {
 				cards.currentActiveCardImage = this.currentActiveCardImage2;
 				cards.currentNumText = this.currentNumText2;
 				cards.deckSizeText = this.deckSizeText2;
+				health.healthSlider = this.healthSlider2;
 				playerObject.SetActive (true);
 				break;
 		}

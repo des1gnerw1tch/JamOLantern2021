@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour {
 	[SerializeField] private int health;
 	[SerializeField] private SpriteRenderer sprite;
-	[SerializeField] private Slider healthSlider;
+	[HideInInspector] public Slider healthSlider;
 
 	void SartHealth () {
 		this.health = 100;
