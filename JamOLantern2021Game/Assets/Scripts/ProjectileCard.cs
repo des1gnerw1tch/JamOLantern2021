@@ -12,6 +12,7 @@ public class ProjectileCard : Card {
 	// xDirection: The direction the player is facing on the x axis
 	// yDirection: The direction the player is facing on the y axis
 	public override void Activate (int xDirection, int yDirection, Vector3 playerPos) {
+		FindObjectOfType<AudioManager> ().Play ("shootProjectile");
 		GameObject proj = Instantiate (this.projectile);
 		proj.transform.position = playerPos;
 		proj.transform.Rotate (GetOrientation (), Space.Self);

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8038115451166371025}
   - component: {fileID: -4292972659988601349}
   m_Layer: 0
-  m_Name: HealingCard
+  m_Name: BandageCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
-  sprite: {fileID: 21300000, guid: dc95b622c6bca4ec98a767787f38ccaf, type: 3}
-  dispenseWhenUsed: 0
-  health: 0
-  cardSprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 78869d7646bec4a2189c61ae6579dc37, type: 3}
+  dispenseWhenUsed: 1
+  health: 30
   overheal: 0
