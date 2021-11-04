@@ -84,4 +84,10 @@ public class PlayerCards : MonoBehaviour {
 		this.currentNumText.text = this.currentCardIndex + 1 + "";
 		this.deckSizeText.text = "/ " + this.cards.Count;
 	}
+
+	// Adds a card to the list
+	public void AddCard (Card card) {
+		this.cards.Add (card);
+		this.UpdateCardUI ();
+	}
 }
