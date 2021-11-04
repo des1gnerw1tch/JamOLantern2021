@@ -4,9 +4,9 @@ using UnityEngine;
 
 // A card drop on the ground
 public class CardDrop : MonoBehaviour {
-	[SerializeField] private bool Crusader;
-	[SerializeField] private bool Priest;
-	[SerializeField] private bool Carpenter;
+	public bool Crusader;
+	public bool Priest;
+	public bool Carpenter;
 	[SerializeField] private Card card;
 
 	// on trigger enter, will check for player type before adding

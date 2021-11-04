@@ -8,7 +8,8 @@ public class FriendlyProjectile : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.CompareTag ("Enemy")) {
-			if (other.gameObject.GetComponent<EnemyHealth> ().Damage (this.damage)) {
+			if (other.gameObject.GetComponent<EnemyHealth> ().Damage (this.damage)) { // if enemy dies
+				other.gameObject.GetComponent<Enemy> ().DropCard ();
 				Destroy (other.gameObject);
 				FindObjectOfType<AudioManager> ().Play ("enemyDeath");
 			} else {

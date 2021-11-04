@@ -124,6 +124,10 @@ MonoBehaviour:
   moveSpeed: 1
   range: 2
   damageOnCollide: 10
+  cardsCanDrop:
+  - {fileID: 2646481546617479325, guid: 9e1ab87cd53034b0cbde2e56d689dc04, type: 3}
+  - {fileID: 2646481546617479325, guid: ad70938564931424bb55a0c1152571db, type: 3}
+  numCardsToDrop: 4
 --- !u!95 &5735710691318068936
 Animator:
   serializedVersion: 3
