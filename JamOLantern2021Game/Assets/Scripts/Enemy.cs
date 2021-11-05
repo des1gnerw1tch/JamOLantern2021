@@ -77,6 +77,7 @@ public class Enemy : MonoBehaviour {
 		Vector3 toSpawn = new Vector3 (this.transform.position.x + dropWiggle.x, this.transform.position.y +
 			dropWiggle.y, this.transform.position.z);
 		int num = Random.Range (0, this.cardsCanDrop.Length);
+		Debug.Log (num);
 		if (this.cardsCanDrop [num].GetComponent<CardDrop> ().Priest) {
 			if (FirstFloorManager.playersToActivate.y > 0) { // if priest is in game
 				Instantiate (this.cardsCanDrop [num], toSpawn, Quaternion.identity);

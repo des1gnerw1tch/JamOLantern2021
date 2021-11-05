@@ -5200,6 +5200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8869994629605176537, guid: 8340ab2fc277c47d6923c5132e6c914a, type: 3}
+      propertyPath: cardsCanDrop.Array.data[3]
+      value: 
+      objectReference: {fileID: 2646481546617479325, guid: 277883bf84e6146c0b11386a91747277, type: 3}
     - target: {fileID: 8869994629605176542, guid: 8340ab2fc277c47d6923c5132e6c914a, type: 3}
       propertyPath: m_Name
       value: Demon
