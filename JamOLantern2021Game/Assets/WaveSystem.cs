@@ -10,10 +10,13 @@ public class WaveSystem : MonoBehaviour {
 	[SerializeField] private GameObject stairs; // stairs to go to next floor
 												// Start is called before the first frame update
 	private TextMeshProUGUI waveCountUI;
+	[SerializeField] private GameObject floorCompletedText;
 
 	void Start () {
 		this.waveOn = 0;
 		this.waveCountUI = GameObject.FindWithTag ("waveCounter").GetComponent<TextMeshProUGUI> ();
+		this.floorCompletedText = GameObject.FindWithTag ("floorCompleted");
+		this.floorCompletedText.SetActive (false);
 
 		foreach (Wave wave in waves) {
 			wave.gameObject.SetActive (false);
@@ -42,6 +45,7 @@ public class WaveSystem : MonoBehaviour {
 	private void ActivateStairs () {
 		FindObjectOfType<AudioManager> ().Play ("spawnStairs");
 		this.stairs.SetActive (true);
+		this.floorCompletedText.SetActive (true);
 	}
 
 	private void UpdateWaveCountUI () {
