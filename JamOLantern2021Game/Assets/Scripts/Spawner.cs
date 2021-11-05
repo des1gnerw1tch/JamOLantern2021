@@ -59,8 +59,6 @@ public class Spawner : MonoBehaviour {
 
 			if (numAlive < max) {
 				Spawn ();
-			} else {
-				SceneManager.LoadScene ("SecondFloor");
 			}
 			spawnTimeCounter = spawnTime;
 		}

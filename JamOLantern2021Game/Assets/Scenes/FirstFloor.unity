@@ -4133,8 +4133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8869994629605176542, guid: 8340ab2fc277c47d6923c5132e6c914a, type: 3}
-  spawnTime: 1
-  max: 5
+  spawnTime: 5
+  max: 1000
   numAlive: 0
   xRadius: 5.32
   yRadius: -3.6
