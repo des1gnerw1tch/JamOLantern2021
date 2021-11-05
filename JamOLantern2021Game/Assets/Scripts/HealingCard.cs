@@ -9,7 +9,7 @@ public class HealingCard : Card {
 	[SerializeField] public bool overheal; //if has overheal
 
 	// Heals 
-	public override void Activate (int xDirection, int yDirection, Vector3 playerPos) {
+	public override void Activate (int xDirection, int yDirection, Vector3 playerPos, GameObject player) {
 		foreach (PlayerHealth curPlay in FindObjectsOfType<PlayerHealth> ()) {
 			if (this.overheal) {
 				curPlay.HealOver (this.health);

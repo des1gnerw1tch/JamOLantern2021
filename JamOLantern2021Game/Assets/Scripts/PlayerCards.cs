@@ -54,7 +54,7 @@ public class PlayerCards : MonoBehaviour {
 		// Does the deck have cards? 
 		if (this.cards.Count > 0) {
 			this.cards [this.currentCardIndex].Activate ((int)this.playerMovement.playerFacing.x,
-				(int)this.playerMovement.playerFacing.y, this.transform.position);
+				(int)this.playerMovement.playerFacing.y, this.transform.position, this.gameObject);
 			if (this.cards [this.currentCardIndex].dispenseWhenUsed) { // if dispensed when used
 				cards.RemoveAt (currentCardIndex); // remove from stack
 				if (this.cards.Count == currentCardIndex) { // are we at our last card in teh deck?
