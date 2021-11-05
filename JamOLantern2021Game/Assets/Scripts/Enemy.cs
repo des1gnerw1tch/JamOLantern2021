@@ -65,8 +65,7 @@ public class Enemy : MonoBehaviour {
 		if (other.gameObject.CompareTag ("Player")) { // if is a player
 			FindObjectOfType<AudioManager> ().Play ("damage");
 			if (other.gameObject.GetComponent<PlayerHealth> ().Damage (this.damageOnCollide)) {
-				Debug.Log ("Player died game freezed");
-				Time.timeScale = 0f;
+				other.gameObject.GetComponent<PlayerHealth> ().Die ();
 			}
 		}
 	}

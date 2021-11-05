@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour {
 	[SerializeField] private int health;
 	[SerializeField] private SpriteRenderer sprite;
 	[HideInInspector] public Slider healthSlider;
+	[SerializeField] private GameObject GameOverText;
 	public bool isBeserk; // is player in beserk mode? if so they are invincible
 
 	// called on first frame
 	private void Start () {
+		this.GameOverText.SetActive (false);
 		this.isBeserk = false;
 		this.UpdateSlider ();
 	}
@@ -66,5 +69,23 @@ public class PlayerHealth : MonoBehaviour {
 		yield return new WaitForSeconds (15f);
 		this.isBeserk = false;
 		this.sprite.color = Color.white;
+	}
+
+	// When player dies
+	public void Die () {
+		this.GameOverText.SetActive (true);
+		Time.timeScale = .1f;
+		StartCoroutine ("GoToPlayerSelect");
+	}
+
+	IEnumerator GoToPlayerSelect () {
+		yield return new WaitForSeconds (.3f);
+		KeepOnSceneChange [] objs = FindObjectsOfType<KeepOnSceneChange> ();
+
+		foreach (KeepOnSceneChange obj in objs) {
+			Destroy (obj.gameObject);
+		}
+		Time.timeScale = 1f;
+		SceneManager.LoadScene ("PlayerSelect");
 	}
 }
