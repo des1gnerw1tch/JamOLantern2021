@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour {
 	[SerializeField] private Animator animator; // this enemies animator
 	private Transform playerToFollow;
 	public float moveSpeed = 4f;
-	public float range = 2f;
+	//public float range = 2f;
 	private Rigidbody2D body;
 	private Vector2 movement;
 	GameObject [] possibleTargets;
