@@ -33,7 +33,7 @@ public class PlayerSelectManager : MonoBehaviour {
 	private void Update () {
 		if (counter > 2) {
 			FirstFloorManager.playersToActivate = this.playersToActivate;
-			SceneManager.LoadScene ("FirstFloor");
+			SceneManager.LoadScene ("Controls");
 		}
 	}
 }
