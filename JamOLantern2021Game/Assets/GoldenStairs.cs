@@ -11,6 +11,7 @@ public class GoldenStairs : MonoBehaviour {
 	private void OnTriggerEnter2D (Collider2D collision) {
 		if (collision.CompareTag ("Player")) {
 			FindObjectOfType<AudioManager> ().Play ("climbStairs");
+			FindObjectOfType<AudioManager> ().Stop (FindObjectOfType<MusicPlayer> ().songName);
 			SceneManager.LoadScene (nextSceneToLoad);
 		}
 

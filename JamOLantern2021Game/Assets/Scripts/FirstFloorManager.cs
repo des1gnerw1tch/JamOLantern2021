@@ -66,6 +66,10 @@ public class FirstFloorManager : MonoBehaviour {
 
 	}
 
+	private void Start () {
+		FindObjectOfType<AudioManager> ().Play ("letsDoThis");
+	}
+
 	// Initiates a player to correct input system and activates/deactivates object if needed
 	private void InitiatePlayer (GameObject playerObject, float id) {
 		PlayerMovement movement = playerObject.GetComponent<PlayerMovement> ();
