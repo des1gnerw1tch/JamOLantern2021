@@ -20,7 +20,9 @@ public class Spawner : MonoBehaviour {
 	Vector3 spawnRadius;
 	Vector3 offset;
 	Vector2 pos;
-	// Start is called before the first frame update
+
+	[HideInInspector] public Wave wave; // the wave this spawner is included in 
+										// Start is called before the first frame update
 	void Start () {
 		target = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 		healthScript = prefab.GetComponent<EnemyHealth> ();
@@ -59,6 +61,9 @@ public class Spawner : MonoBehaviour {
 
 			if (numAlive < max) {
 				Spawn ();
+			} else {
+				this.wave.IncSpawnersDone ();
+				Destroy (this.gameObject);
 			}
 			spawnTimeCounter = spawnTime;
 		}
