@@ -132,6 +132,7 @@ MonoBehaviour:
   - {fileID: 2646481546617479325, guid: 2a70bc7d133d94eb28e043b96c2edc1c, type: 3}
   - {fileID: 2646481546617479325, guid: 889c46b588a864a278a1d49c5942a9e9, type: 3}
   - {fileID: 2646481546617479325, guid: 33c79c839b9bf4b48bf2ce87be22993d, type: 3}
+  - {fileID: 2646481546617479325, guid: bc7462fa3de054b24bd4843a371945e0, type: 3}
   numCardsToDrop: 4
 --- !u!95 &5735710691318068936
 Animator:

@@ -1892,6 +1892,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: beserk
+    clip: {fileID: 8300000, guid: 36a01a009323042b69549587cf8a9407, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1224174383
 Transform:
   m_ObjectHideFlags: 0
