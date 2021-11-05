@@ -66,7 +66,7 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	IEnumerator TurnOffBeserk () {
-		yield return new WaitForSeconds (15f);
+		yield return new WaitForSeconds (7f);
 		this.isBeserk = false;
 		this.sprite.color = Color.white;
 	}

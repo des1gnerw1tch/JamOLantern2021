@@ -207,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawner Dry Bones
       objectReference: {fileID: 0}
+    - target: {fileID: 1211062809588767425, guid: f20a870e87aeb42c4ad37031aa4cb23c, type: 3}
+      propertyPath: spawnTime
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1211062809588767430, guid: f20a870e87aeb42c4ad37031aa4cb23c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -811,11 +815,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2913867450470190316, guid: 4df6846599d4946cf8c68da9bb71934d, type: 3}
       propertyPath: max
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2913867450470190316, guid: 4df6846599d4946cf8c68da9bb71934d, type: 3}
       propertyPath: spawnTime
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2913867450470190322, guid: 4df6846599d4946cf8c68da9bb71934d, type: 3}
       propertyPath: m_Name
@@ -2768,7 +2772,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9160066262122172082, guid: 794a70ab0b1564cf1bb7df14135cd378, type: 3}
       propertyPath: max
-      value: 15
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9160066262122172082, guid: 794a70ab0b1564cf1bb7df14135cd378, type: 3}
+      propertyPath: spawnTime
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9160066262122172083, guid: 794a70ab0b1564cf1bb7df14135cd378, type: 3}
       propertyPath: m_Name
@@ -2809,11 +2817,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1211062809588767425, guid: f20a870e87aeb42c4ad37031aa4cb23c, type: 3}
       propertyPath: max
-      value: 8
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1211062809588767425, guid: f20a870e87aeb42c4ad37031aa4cb23c, type: 3}
       propertyPath: spawnTime
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1211062809588767430, guid: f20a870e87aeb42c4ad37031aa4cb23c, type: 3}
       propertyPath: m_RootOrder
