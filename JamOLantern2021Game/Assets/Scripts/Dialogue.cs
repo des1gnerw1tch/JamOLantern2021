@@ -10,6 +10,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     public float typingSpeed;
     public Animator dialogAnimator;
+    public Animator fadeAnimator;
     public GameObject continueButton;
 
     void Start()
@@ -23,6 +24,7 @@ public class Dialogue : MonoBehaviour
         {
             continueButton.SetActive(true);
         }
+        checkEnd();
     }
 
     public void NextSentence()
@@ -49,6 +51,14 @@ public class Dialogue : MonoBehaviour
         {
             textDisplay.text += c;
             yield return new WaitForSeconds(typingSpeed);
+        }
+    }
+
+    public void checkEnd()
+    {
+        if (index == sentences.Length - 1 && textDisplay.text == "")
+        {
+            fadeAnimator.SetTrigger("Fade");
         }
     }
 }
