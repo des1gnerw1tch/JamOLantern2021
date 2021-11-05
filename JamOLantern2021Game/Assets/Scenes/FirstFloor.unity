@@ -1904,6 +1904,12 @@ MonoBehaviour:
     pitch: 1.46
     loop: 0
     source: {fileID: 0}
+  - name: coin
+    clip: {fileID: 8300000, guid: 69929cb95f2d34cd38effab3d6764f81, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1224174383
 Transform:
   m_ObjectHideFlags: 0

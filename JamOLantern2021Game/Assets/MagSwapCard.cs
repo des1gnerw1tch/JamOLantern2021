@@ -14,6 +14,8 @@ public class MagSwapCard : Card {
 			int rand = Random.Range (0, cardPool.Length);
 			playerDeck.AddCard (this.cardPool [rand]);
 		}
+
+		FindObjectOfType<AudioManager> ().Play ("coin");
 	}
 
 }
