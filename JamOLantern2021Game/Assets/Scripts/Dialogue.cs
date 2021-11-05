@@ -10,39 +10,36 @@ public class Dialogue : MonoBehaviour
     private int index;
     public float typingSpeed;
     public Animator dialogAnimator;
-    private bool startDialog = true;
+    public GameObject continueButton;
 
+    void Start()
+    {
+        StartCoroutine(WriteSentence());
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (textDisplay.text == sentences[index])
         {
-            if (startDialog)
-            {
-                dialogAnimator.SetTrigger("Enter");
-                startDialog = false;
-            }
-            else
-            {
-                NextSentence();
-            }
+            continueButton.SetActive(true);
         }
     }
 
-    void NextSentence()
+    public void NextSentence()
     {
-        if (index <= sentences.Length - 1)
+        dialogAnimator.SetTrigger("Sip");
+        continueButton.SetActive(false);
+
+        if (index < sentences.Length - 1)
         {
+            index++;
             textDisplay.text = "";
             StartCoroutine(WriteSentence());
         }
         else
         {
-            dialogAnimator.SetTrigger("Sip");
             textDisplay.text = "";
-            dialogAnimator.SetTrigger("Exit");
-            index = 0;
-            startDialog = true;
+            continueButton.SetActive(false);
         }
     }
 
