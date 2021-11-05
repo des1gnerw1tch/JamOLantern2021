@@ -658,6 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 748e8f6d9094d4547811a2ca184ddc83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: FirstFloor
 --- !u!1 &1657602467
 GameObject:
   m_ObjectHideFlags: 0
