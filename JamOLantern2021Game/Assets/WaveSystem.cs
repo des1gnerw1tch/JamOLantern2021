@@ -10,7 +10,7 @@ public class WaveSystem : MonoBehaviour {
 	[SerializeField] private GameObject stairs; // stairs to go to next floor
 												// Start is called before the first frame update
 	private TextMeshProUGUI waveCountUI;
-	[SerializeField] private GameObject floorCompletedText;
+	private GameObject floorCompletedText;
 
 	void Start () {
 		this.waveOn = 0;

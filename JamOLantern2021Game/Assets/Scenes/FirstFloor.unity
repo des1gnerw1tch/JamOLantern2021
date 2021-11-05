@@ -2929,6 +2929,30 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: pixelWoman
+    clip: {fileID: 8300000, guid: 5d50cf7844a474293a6b4461483e50eb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Hmm
+    clip: {fileID: 8300000, guid: 5d50cf7844a474293a6b4461483e50eb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HappyGod
+    clip: {fileID: 8300000, guid: 2cd9d93406100423bbaefef1c597c7dd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jam1
+    clip: {fileID: 8300000, guid: e9f782d62c9714dbcbe8f2e4e2110702, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1224174383
 Transform:
   m_ObjectHideFlags: 0
