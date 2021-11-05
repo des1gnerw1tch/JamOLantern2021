@@ -5,7 +5,7 @@ using UnityEngine;
 public class FriendlyProjectile : MonoBehaviour {
 	[SerializeField] protected int damage;
 	[SerializeField] protected bool pierce;
-	const float LIFETIME = 30f; // will despawn after 12 seconds
+	const float LIFETIME = 10f; // will despawn after 12 seconds
 
 	private void Start () {
 		StartCoroutine ("Despawn");

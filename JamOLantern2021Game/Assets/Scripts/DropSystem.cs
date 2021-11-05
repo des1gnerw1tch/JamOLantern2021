@@ -59,6 +59,6 @@ public class DropSystem : MonoBehaviour {
 				}
 			}
 		}
-		return generalCards [0];*/
-}
+		return generalCards [0];
+}*/
 }
