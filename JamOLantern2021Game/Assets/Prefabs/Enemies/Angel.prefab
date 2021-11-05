@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3826066043253024934}
   - component: {fileID: 616396003682715477}
   m_Layer: 0
-  m_Name: Dry Bones
+  m_Name: Angel
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8869994629605176542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.6, y: -3.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -1438504379
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4408418827494455481, guid: 086a621e941be46bfb3f38ddf8a37caa, type: 3}
+  m_Sprite: {fileID: 8024617812107075438, guid: 6482ec47b15fa44418527631c380e728, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5735710691318068936}
-  moveSpeed: 3
-  damageOnCollide: 5
+  moveSpeed: 1
+  damageOnCollide: 15
   cardsCanDrop:
   - {fileID: 2646481546617479325, guid: 9e1ab87cd53034b0cbde2e56d689dc04, type: 3}
   - {fileID: 2646481546617479325, guid: ad70938564931424bb55a0c1152571db, type: 3}
@@ -146,7 +146,7 @@ Animator:
   m_GameObject: {fileID: 8869994629605176542}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a004f23ceb3a848f78390deba190f4a5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 286240472a9e7468cbbeb1708479fbdd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -179,7 +179,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63577133, y: 1}
+  m_Size: {x: 1.023714, y: 1.2847664}
   m_EdgeRadius: 0
 --- !u!114 &616396003682715477
 MonoBehaviour:
@@ -193,5 +193,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63c4487b82e94b36b7ebefce2f88dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 5000
   sprite: {fileID: 8869994629605176543}
