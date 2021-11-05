@@ -1898,6 +1898,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: turret
+    clip: {fileID: 8300000, guid: 4717bd38e18844bafac295834de61244, type: 3}
+    volume: 1
+    pitch: 1.46
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1224174383
 Transform:
   m_ObjectHideFlags: 0

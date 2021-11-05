@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4872341195751662513}
   - component: {fileID: 8939470226247548481}
   m_Layer: 0
-  m_Name: ExplosiveRoundsDrop
+  m_Name: TurretCardDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -1438504379
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3d4fb80cc3496412782b5b78e1e8f84d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d1e6c1c00e694bdc8ea6c7badb57a14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,10 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46630700f82f48b2b27a72632d9dfd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Crusader: 1
+  Crusader: 0
   Priest: 0
-  Carpenter: 0
-  card: {fileID: -7025184563063199012, guid: c1548250ee6b24bbc9c86fb8ef8a71dc, type: 3}
+  Carpenter: 1
+  card: {fileID: -7025184563063199012, guid: abb8abc610dad420ab69cc620f142ef0, type: 3}
 --- !u!61 &8939470226247548481
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -5,7 +5,11 @@ using UnityEngine;
 public class FriendlyProjectile : MonoBehaviour {
 	[SerializeField] protected int damage;
 	[SerializeField] protected bool pierce;
+	const float LIFETIME = 30f; // will despawn after 12 seconds
 
+	private void Start () {
+		StartCoroutine ("Despawn");
+	}
 	public virtual void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.CompareTag ("Enemy")) {
 			if (other.gameObject.GetComponent<EnemyHealth> ().Damage (this.damage)) { // if enemy dies
@@ -21,4 +25,10 @@ public class FriendlyProjectile : MonoBehaviour {
 
 		}
 	}
+
+	IEnumerator Despawn () {
+		yield return new WaitForSeconds (LIFETIME);
+		Destroy (this.gameObject);
+	}
+
 }
