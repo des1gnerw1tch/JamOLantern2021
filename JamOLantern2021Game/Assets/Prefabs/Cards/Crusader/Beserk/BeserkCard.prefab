@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: e8476ec6140f04d5990889fd2e30bfdf, type: 3}
-  dispenseWhenUsed: 0
+  dispenseWhenUsed: 1

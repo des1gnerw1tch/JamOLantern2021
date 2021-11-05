@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5437603781024548948}
   - component: {fileID: 5437603781024548947}
   - component: {fileID: 3513587680563610460}
+  - component: {fileID: 3356034496513696454}
   m_Layer: 0
   m_Name: GunGirl
   m_TagString: Player
@@ -144,6 +145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   sprite: {fileID: 6282858287500375966}
+  healthSlider: {fileID: 0}
+  isBeserk: 0
 --- !u!95 &5437603781024548948
 Animator:
   serializedVersion: 3
@@ -218,3 +221,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67133135, y: 0.76755345}
   m_EdgeRadius: 0
+--- !u!114 &3356034496513696454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6282858287500375961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb1b7ff2e443843cb901410af8eac5c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
