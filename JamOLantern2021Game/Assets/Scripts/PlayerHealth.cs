@@ -90,11 +90,11 @@ public class PlayerHealth : MonoBehaviour {
 	}
 
 	private void Update () {
-		if (Input.GetKeyDown ("space")) {
+		/*if (Input.GetKeyDown ("space")) {
 			Time.timeScale = 5f;
 		}
 		if (Input.GetKeyDown ("o")) {
 			Time.timeScale = 1f;
-		}
+		}*/
 	}
 }
