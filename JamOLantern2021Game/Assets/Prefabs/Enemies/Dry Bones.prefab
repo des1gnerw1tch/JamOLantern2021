@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5735710691318068936}
-  moveSpeed: 3
+  moveSpeed: 1.5
   damageOnCollide: 5
   cardsCanDrop:
   - {fileID: 2646481546617479325, guid: 9e1ab87cd53034b0cbde2e56d689dc04, type: 3}
@@ -135,7 +135,7 @@ MonoBehaviour:
   - {fileID: 2646481546617479325, guid: 8cb394a20dde043218d2a88da566b695, type: 3}
   - {fileID: 2646481546617479325, guid: 45f3f4de287b347e1b61a55c055c6cf9, type: 3}
   - {fileID: 2646481546617479325, guid: 366a50fa6154c4bafa73848ab4e6b912, type: 3}
-  numCardsToDrop: 4
+  numCardsToDrop: 2
 --- !u!95 &5735710691318068936
 Animator:
   serializedVersion: 3

@@ -128,7 +128,7 @@ MonoBehaviour:
   up: 273
   down: 274
   animator: {fileID: 2705542781357959734}
-  sprintSpeed: 5
+  sprintSpeed: 3.5
   speedDampener: 0.7
   playerFacing: {x: 0, y: 0}
 --- !u!114 &2705542781833506978
@@ -146,6 +146,7 @@ MonoBehaviour:
   health: 100
   sprite: {fileID: 2705542781833507039}
   healthSlider: {fileID: 0}
+  GameOverText: {fileID: 0}
   isBeserk: 0
 --- !u!95 &2705542781357959734
 Animator:

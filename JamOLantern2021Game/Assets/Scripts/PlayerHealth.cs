@@ -88,4 +88,13 @@ public class PlayerHealth : MonoBehaviour {
 		Time.timeScale = 1f;
 		SceneManager.LoadScene ("PlayerSelect");
 	}
+
+	private void Update () {
+		if (Input.GetKeyDown ("space")) {
+			Time.timeScale = 5f;
+		}
+		if (Input.GetKeyDown ("o")) {
+			Time.timeScale = 1f;
+		}
+	}
 }

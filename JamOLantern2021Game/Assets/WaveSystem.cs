@@ -42,7 +42,14 @@ public class WaveSystem : MonoBehaviour {
 		UpdateWaveCountUI ();
 	}
 
+	// when wave is completed
 	private void ActivateStairs () {
+		// heal each player
+		PlayerHealth [] players = FindObjectsOfType<PlayerHealth> ();
+		foreach (PlayerHealth player in players) {
+			player.Heal (100);
+		}
+		// Spawn stairs,
 		FindObjectOfType<AudioManager> ().Play ("spawnStairs");
 		this.stairs.SetActive (true);
 		this.floorCompletedText.SetActive (true);

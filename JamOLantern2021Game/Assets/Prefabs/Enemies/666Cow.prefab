@@ -135,7 +135,7 @@ MonoBehaviour:
   - {fileID: 2646481546617479325, guid: 8cb394a20dde043218d2a88da566b695, type: 3}
   - {fileID: 2646481546617479325, guid: 45f3f4de287b347e1b61a55c055c6cf9, type: 3}
   - {fileID: 2646481546617479325, guid: 366a50fa6154c4bafa73848ab4e6b912, type: 3}
-  numCardsToDrop: 4
+  numCardsToDrop: 10
 --- !u!95 &5735710691318068936
 Animator:
   serializedVersion: 3
@@ -193,5 +193,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63c4487b82e94b36b7ebefce2f88dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10000
+  health: 2000
   sprite: {fileID: 8869994629605176543}

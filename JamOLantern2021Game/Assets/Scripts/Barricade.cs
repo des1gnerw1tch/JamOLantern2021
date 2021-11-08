@@ -12,5 +12,6 @@ public class Barricade : MonoBehaviour {
 
 	IEnumerator Death () {
 		yield return new WaitForSeconds (lifetime);
+		Destroy (this.gameObject);
 	}
 }

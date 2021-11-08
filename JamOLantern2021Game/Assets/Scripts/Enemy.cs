@@ -72,7 +72,7 @@ public class Enemy : MonoBehaviour {
 
 	// This will drop a random valid card for archetypes chosen
 	public void DropCard () {
-		Vector2 dropWiggle = new Vector2 (Random.Range (0.1f, 0.5f), Random.Range (0.1f, 0.5f));
+		Vector2 dropWiggle = new Vector2 (Random.Range (-0.5f, 0.5f), Random.Range (-0.5f, 0.5f));
 		Vector3 toSpawn = new Vector3 (this.transform.position.x + dropWiggle.x, this.transform.position.y +
 			dropWiggle.y, this.transform.position.z);
 		int num = Random.Range (0, this.cardsCanDrop.Length);

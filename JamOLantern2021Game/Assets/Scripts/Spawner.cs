@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour {
 	public int numAlive = 0;
 	public float xRadius = 15f;
 	public float yRadius = 15f;
-	public float minDistanceFromPlayer = 10f;
+	public const float minDistanceFromPlayer = 3f;
 	private EnemyHealth healthScript;
 	public Color GizmosColor = new Color (0.5f, 0.5f, 0.5f, 0.2f);
 	Vector3 spawnRadius;
@@ -27,6 +27,7 @@ public class Spawner : MonoBehaviour {
 		target = GameObject.FindGameObjectWithTag ("Player").GetComponent<Transform> ();
 		healthScript = prefab.GetComponent<EnemyHealth> ();
 		spawnRadius.Set (xRadius, yRadius, 0f);
+		this.spawnTimeCounter = spawnTime;
 	}
 	void Spawn () {
 
@@ -38,7 +39,7 @@ public class Spawner : MonoBehaviour {
 
 		} else {
 			//causes stack overflow?
-			//  Spawn();
+			Spawn ();
 		}
 
 

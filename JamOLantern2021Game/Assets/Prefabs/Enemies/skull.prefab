@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5735710691318068936}
-  moveSpeed: 1
+  moveSpeed: 0.5
   damageOnCollide: 5
   cardsCanDrop:
   - {fileID: 2646481546617479325, guid: 9e1ab87cd53034b0cbde2e56d689dc04, type: 3}
