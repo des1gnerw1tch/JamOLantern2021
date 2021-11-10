@@ -22,7 +22,13 @@ public class PlayerHealth : MonoBehaviour {
 	// Returns true if still alive, false if not
 	public bool Damage (int healthPoints) {
 		if (!this.isBeserk) {
+			int healthInitial = health;
 			this.health -= healthPoints;
+			Debug.Log (this.health + "" + healthInitial);
+
+			if (this.health < 20 && healthInitial >= 20) {
+				FindObjectOfType<AudioManager> ().Play ("HealthWarning");
+			}
 		}
 
 		StartCoroutine ("Blink");
@@ -89,12 +95,14 @@ public class PlayerHealth : MonoBehaviour {
 		SceneManager.LoadScene ("PlayerSelect");
 	}
 
-	private void Update () {
-		/*if (Input.GetKeyDown ("space")) {
-			Time.timeScale = 5f;
+	/*private void Update () {
+		if (Input.GetKeyDown ("space")) {
+			Time.timeScale = 100f;
+			this.health = 10000;
 		}
 		if (Input.GetKeyDown ("o")) {
 			Time.timeScale = 1f;
-		}*/
-	}
+			this.health = 100;
+		}
+	}*/
 }

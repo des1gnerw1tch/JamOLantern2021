@@ -2933,7 +2933,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: b5c1d8b4ae4574271bb2aff3025477fa, type: 3}
     volume: 1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Hmm
     clip: {fileID: 8300000, guid: 61abd26c95e0a4ee8ad55e57e6aba1e2, type: 3}
@@ -2949,6 +2949,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jam1
     clip: {fileID: 8300000, guid: e9f782d62c9714dbcbe8f2e4e2110702, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: HealthWarning
+    clip: {fileID: 8300000, guid: 5ebf8bf0d138446c7ade11df7b333b46, type: 3}
     volume: 1
     pitch: 1
     loop: 0

@@ -99,7 +99,7 @@ MonoBehaviour:
   Crusader: 0
   Priest: 0
   Carpenter: 1
-  card: {fileID: -7025184563063199012, guid: 318484ca6d79c4aac86ea086b245d358, type: 3}
+  card: {fileID: -5594728499007356176, guid: 318484ca6d79c4aac86ea086b245d358, type: 3}
 --- !u!61 &8939470226247548481
 BoxCollider2D:
   m_ObjectHideFlags: 0
